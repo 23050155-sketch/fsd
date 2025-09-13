@@ -1,0 +1,165 @@
+/* Artists Page - Modern Design */
+.artists-main {
+    padding: 0;
+    max-width: 100%;
+    background-color: #121212;
+    color: white;
+}
+
+/* Hero Section */
+.artists-hero {
+    background: linear-gradient(135deg, #1db954, #191414);
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.artists-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.artists-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 2rem 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.section-header h2 i {
+    margin-right: 10px;
+    color: #1db954;
+}
+
+.see-all {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+.see-all:hover {
+    color: #1db954;
+    text-decoration: underline;
+}
+
+/* Artists Grid */
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 2rem 2rem;
+}
+
+.artist-card {
+    background: #181818;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.artist-card:hover {
+    background: #282828;
+    transform: translateY(-5px);
+}
+
+.artist-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #1db954, #191414);
+}
+
+.artist-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #1db954;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.artist-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.artist-genre {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.artist-followers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1db954;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.artist-followers i {
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .artists-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .artists-hero p {
+        font-size: 1rem;
+    }
+    
+    .artists-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .artist-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .artists-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .artist-image {
+        width: 100px;
+        height: 100px;
+    }
+}

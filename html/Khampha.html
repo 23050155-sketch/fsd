@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Khám Phá | Web Phát Nhạc</title>
+    <link rel="stylesheet" href="../css/Khampha.css">
+    <link rel ="stylesheet" href="../css/Public.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-music"></i>
+            <span>Web Phát Nhạc</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Trang chủ</a></li>
+                <li><a href="../html/Khampha.html" class="active">Khám phá</a></li>
+              <li><a href="../html/Nghesi.html">Nghệ sĩ</a></li>
+                <li><a href="..//html/Album.html">Album</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <button id="login-btn">Đăng nhập</button>
+            <button id="register-btn">Đăng ký</button>
+        </div>
+    </header>
+
+    <main class="discover-main">
+        <!-- Section 1: Banner chủ đề tháng -->
+        <section class="month-theme">
+            <div class="theme-content">
+                <h1>Chủ đề tháng: Nhạc Hè Sôi Động</h1>
+                <p>Khám phá những bản hit cho mùa hè này</p>
+                <button class="theme-button">Khám phá ngay          
+                </button>
+            </div>
+        </section>
+
+        <!-- Section 2: Bài hát mới phát hành -->
+        <section class="new-releases">
+            <div class="section-header">
+                <h2><i class="fas fa-fire"></i> Mới phát hành</h2>
+                <a href="#" class="see-all">Xem tất cả</a>
+            </div>
+            <div class="horizontal-scroll" id="new-songs">
+                <!-- Bài hát sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section 3: Thể loại âm nhạc -->
+<section class="music-genres">
+    <div class="section-header">
+        <h2><i class="fas fa-tags"></i> Thể loại âm nhạc</h2>
+    </div>
+    <div class="genres-grid">
+        <div class="genre-card">
+            <div class="genre-image-container">
+                <img src="source/vpop.jpg" alt="V-Pop" class="genre-image">
+            </div>
+            <div class="genre-info">
+                <h3>V-Pop</h3>
+                <p>100 bài hát</p>
+            </div>
+        </div>
+        <div class="genre-card">
+            <div class="genre-image-container">
+                <img src="source/nhactre.jpg" alt="Nhạc Trẻ" class="genre-image">
+            </div>
+            <div class="genre-info">
+                <h3>Nhạc Trẻ</h3>
+                <p>75 bài hát</p>
+            </div>
+        </div>
+        <div class="genre-card">
+            <div class="genre-image-container">
+                <img src="source/ballad2.png" alt="Nhạc Ballad" class="genre-image">
+            </div>
+            <div class="genre-info">
+                <h3>Nhạc Ballad</h3>
+                <p>85 bài hát</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Section 4: Top bài hát tuần -->
+        <section class="top-charts">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-line"></i> Top bài hát tuần</h2>
+                <a href="#" class="see-all">Xem bảng xếp hạng</a>
+            </div>
+            <div class="top-songs-list">
+                <!-- Top songs sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section 5: Nghệ sĩ nổi bật -->
+        <section class="featured-artists">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Nghệ sĩ nổi bật</h2>
+                <a href="#" class="see-all">Xem tất cả</a>
+            </div>
+            <div class="artists-carousel" id="featured-artists">
+                <!-- Nghệ sĩ sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section 6: Playlist đề xuất -->
+        <section class="recommended-playlists">
+            <div class="section-header">
+                <h2><i class="fas fa-headphones"></i> Dành cho bạn</h2>
+            </div>
+            <div class="playlists-grid">
+                <div class="playlist-card-large">
+                    <img src="https://via.placeholder.com/400" alt="Playlist">
+                    <div class="playlist-info">
+                        <h3>Nhạc Buổi Sáng</h3>
+                        <p>Khởi đầu ngày mới tràn đầy năng lượng</p>
+                    </div>
+                </div>
+                <div class="playlist-card-large">
+                    <img src="https://via.placeholder.com/400" alt="Playlist">
+                    <div class="playlist-info">
+                        <h3>Nhạc Tập Trung</h3>
+                        <p>Giúp bạn tập trung làm việc hiệu quả</p>
+                    </div>
+                </div>
+                <div class="playlist-card-large">
+                    <img src="https://via.placeholder.com/400" alt="Playlist">
+                    <div class="playlist-info">
+                        <h3>Nhạc Thư Giãn</h3>
+                        <p>Thả lỏng sau một ngày dài</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Giới thiệu</h3>
+                <p>Web Phát Nhạc là nền tảng nghe nhạc trực tuyến chất lượng cao.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kết nối</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 Web Phát Nhạc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="player-bar">
+        <div class="song-info">
+            <img src="" alt="Song cover" id="current-song-cover">
+            <div>
+                <p id="current-song-title">Không có bài hát nào đang phát</p>
+                <p id="current-song-artist"></p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
+            <button id="play-btn"><i class="fas fa-play"></i></button>
+            <button id="stop-btn"><i class="fas fa-stop"></i></button>      <!--nút stop -->
+            <button id="next-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <span id="duration">0:00</span>
+        </div>
+        <button id="close-player" class="close-player-btn">&times;</button>
+        <audio id="audio-player"></audio>
+    </div>
+
+    <script src="..//js/Khampha.js"></script>
+
+</body>
+</html>

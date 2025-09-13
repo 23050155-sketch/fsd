@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Album | Web Phát Nhạc</title>
+    <link rel="stylesheet" href="../css/Album.css">
+    <link rel="stylesheet" href="../css/Public.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-music"></i>
+            <span>Web Phát Nhạc</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Trang chủ</a></li>
+                <li><a href="../html/Khampha.html">Khám phá</a></li>
+                <li><a href="../html/Nghesi.html">Nghệ sĩ</a></li>
+                <li><a href="..//html/Album.html" class="active">Album</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <button id="login-btn">Đăng nhập</button>
+            <button id="register-btn">Đăng ký</button>
+        </div>
+    </header>
+
+    <main class="albums-main">
+        <!-- Section 1: Album nổi bật -->
+        <section class="featured-section">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Album nổi bật</h2>
+            </div>
+            <div class="featured-album">
+                <div class="album-cover">
+                    <img src="source/albumskytour.jpg" alt="Sky Tour">
+                </div>
+                <div class="album-info">
+                    <span class="album-badge">NỔI BẬT</span>
+                    <h3>Sky Tour</h3>
+                    <p class="artist">Sơn Tùng M-TP</p>
+                    <p class="meta">12 bài hát • 45 phút</p>
+                    <div class="actions">
+                        <button class="play-btn"><i class="fas fa-play"></i> Phát ngay</button>
+                        <button class="save-btn"><i class="far fa-bookmark"></i> Lưu lại</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Album mới -->
+        <section class="new-albums">
+            <div class="section-header">
+                <h2><i class="fas fa-fire"></i> Album mới phát hành</h2>
+                <a href="#" class="see-all">Xem tất cả</a>
+            </div>
+            <div class="albums-grid" id="new-albums">
+                <!-- Load bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section 3: Album phổ biến -->
+        <section class="popular-albums">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-line"></i> Album phổ biến</h2>
+                <a href="#" class="see-all">Xem bảng xếp hạng</a>
+            </div>
+            <div class="albums-horizontal" id="popular-albums">
+                <!-- Load bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section 4: Album theo thể loại -->
+        <section class="genre-albums">
+            <div class="section-header">
+                <h2><i class="fas fa-tags"></i> V-Pop</h2>
+            </div>
+            <div class="albums-grid" id="vpop-albums">
+                <!-- Load bằng JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Giống footer các trang khác -->
+    </footer>
+
+    <div class="player-bar">
+        <!-- Giống player bar các trang khác -->
+    </div>
+
+
+    <script src="../js/Album.js"></script>
+</body>
+</html>

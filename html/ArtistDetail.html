@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết nghệ sĩ | Web Phát Nhạc</title>
+    <link rel="stylesheet" href="../css/Public.css">
+    <link rel="stylesheet" href="../css/ArtistDetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-music"></i>
+            <span>Web Phát Nhạc</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Trang chủ</a></li>
+                <li><a href="../html/Khampha.html">Khám phá</a></li>
+                <li><a href="../html/Nghesi.html">Nghệ sĩ</a></li>
+                <li><a href="../html/Album.html">Album</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm nghệ sĩ...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <button id="login-btn">Đăng nhập</button>
+            <button id="register-btn">Đăng ký</button>
+        </div>
+    </header>
+
+    <main class="artist-detail-main">
+        <!-- Artist Header -->
+        <section class="artist-header">
+            <div class="artist-header-content">
+                <div class="artist-image-container">
+                    <img id="artist-cover" src="" alt="Artist" class="artist-cover">
+                    <div class="artist-verified">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h1 id="artist-name">Nghệ sĩ</h1>
+                    <p id="artist-meta" class="artist-meta">
+                        <span id="artist-followers">5.2M</span> người theo dõi • 
+                        <span id="artist-genre">V-Pop, Nhạc trẻ</span>
+                    </p>
+                    <div class="artist-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p id="artist-bio" class="artist-bio">Thông tin về nghệ sĩ sẽ được hiển thị ở đây.</p>
+                    <div class="artist-actions">
+                        <button class="follow-btn"><i class="fas fa-user-plus"></i> Theo dõi</button>
+                        <button class="play-all-btn"><i class="fas fa-play"></i> Phát tất cả</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bài hát nổi bật -->
+        <section class="artist-section">
+            <div class="section-header">
+                <h2><i class="fas fa-music"></i> Bài hát nổi bật</h2>
+            </div>
+            <div id="popular-songs">
+                <!-- Bài hát sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Albums -->
+        <section class="artist-section">
+            <div class="section-header">
+                <h2><i class="fas fa-compact-disc"></i> Album</h2>
+                <a href="#" class="see-all">Xem tất cả</a>
+            </div>
+            <div class="albums-grid" id="artist-albums">
+                <!-- Album sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Nghệ sĩ liên quan -->
+        <section class="artist-section">
+            <div class="section-header">
+                <h2><i class="fas fa-users"></i> Nghệ sĩ liên quan</h2>
+            </div>
+            <div class="artists-grid" id="related-artists">
+                <!-- Nghệ sĩ sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sự kiện -->
+        <section class="artist-section">
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-alt"></i> Sự kiện sắp tới</h2>
+            </div>
+            <div id="artist-events">
+                <!-- Sự kiện sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Giới thiệu</h3>
+                <p>Web Phát Nhạc là nền tảng nghe nhạc trực tuyến chất lượng cao.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kết nối</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 Web Phát Nhạc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="player-bar">
+        <div class="song-info">
+            <img src="" alt="Song cover" id="current-song-cover">
+            <div>
+                <p id="current-song-title">Không có bài hát nào đang phát</p>
+                <p id="current-song-artist"></p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
+            <button id="play-btn"><i class="fas fa-play"></i></button>
+            <button id="stop-btn"><i class="fas fa-stop"></i></button>
+            <button id="next-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <span id="duration">0:00</span>
+        </div>
+        <button id="close-player" class="close-player-btn">&times;</button>
+        <audio id="audio-player"></audio>
+    </div>
+
+    <script src="../js/ArtistDetail.js"></script>
+</body>
+</html>
